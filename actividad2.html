@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la Tierra</title>
+    <style>
+        /* Color Palette: Verde Musgo (#4A5D23) and Roca Gris (#708090) */
+        :root {
+            --moss-green: #6B8E4E;
+            --moss-green-light: #B2C5B2;
+            --moss-green-dark: #3C5148;
+            --rock-grey: #3C5148;
+            --rock-grey-light: #B2C5B2;
+            --rock-grey-dark: #1B2727;
+            --bg-color: #D5DDDF;
+            --text-color: #1B2727;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header and Menu */
+        header {
+            background-color: var(--rock-grey-dark);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu1 ul {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: var(--moss-green);
+            border-bottom: 4px solid var(--moss-green-dark);
+            flex-wrap: wrap;
+        }
+
+        .menu1 li {
+            display: inline-block;
+        }
+
+        .menu1 li a {
+            display: block;
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-right: 1px solid var(--moss-green-light);
+        }
+
+        .menu1 li:last-child a {
+            border-right: none;
+        }
+
+        .menu1 li a:hover {
+            background-color: var(--moss-green-light);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--moss-green-dark);
+            border-bottom: 2px solid var(--rock-grey-light);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--rock-grey-dark);
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .reflexion {
+            background-color: var(--rock-grey-light);
+            color: var(--rock-grey-dark);
+            padding: 20px;
+            border-left: 5px solid var(--moss-green);
+            border-radius: 4px;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        /* Image styling */
+        .hero-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Cards for activities */
+        .activity-card, .student-card {
+            background-color: var(--rock-grey);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-top: 5px solid var(--moss-green);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .activity-card h3, .student-card h3 {
+            margin-top: 0;
+            color: var(--white);
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--rock-grey-light);
+            padding-bottom: 10px;
+        }
+
+        .student-card ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .student-card li {
+            margin-bottom: 10px;
+        }
+
+        .student-card strong {
+            color: var(--bg-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--moss-green);
+            color: var(--white);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: var(--moss-green-dark);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu1">
+            <ul>
+                <li><a href="menu soto.html">Inicio</a></li>
+                <li><a href="actividad1.html">Energía</a></li>
+                <li><a href="actividad2.html">Tierra</a></li>
+                <li><a href="actividad3.html">Reciclaje</a></li>
+                <li><a href="actividad4.html">Medio Ambiente</a></li>
+                <li><a href="alumno.html">ALUMNO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Día Internacional de la Madre Tierra</h1>
+        
+        <div class="activity-card">
+            <h3>Detalles de la Actividad</h3>
+            <p><strong>Fecha en que se conmemora:</strong> 22 de Abril</p>
+            <p><strong>Por qué se conmemora:</strong> Se celebra para recordar que el planeta y sus ecosistemas nos dan la vida y el sustento. Asumimos la responsabilidad colectiva de fomentar esta armonía con la naturaleza.</p>
+            
+            <div style="margin-top: 20px;">
+                <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                  <source src="Dia mundial de la tierra.mp4" type="video/mp4">
+                  Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+            
+            <a href="Dia mundial de la tierra.mp4" target="_blank" class="btn" download>Descargar Video</a>
+        </div>
+    </div>
+</body>
+</html>
